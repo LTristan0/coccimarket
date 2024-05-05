@@ -1,0 +1,27 @@
+{{ form_start(form) }}
+    {# {{ form_widget(form.imageFileName) }} #}
+
+    <div class="row">
+        <div>
+            {{ form_row(form.name) }}
+        </div>
+        <div>
+            {{ form_row(form.description) }}
+        </div>
+        <div class="col">
+            {{ form_row(form.price) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <img width="150" height="150" src="{{ asset('uploads/images/' ~ produit.imageFileName) }}">
+        </div>
+        <div class="col">
+            {{ form_row(form.image) }}
+        </div>
+    </div>
+
+    <button class="btn btn-primary mt-3">{{ button_label|default('Créer') }}</button>
+    <a class="btn btn-secondary mt-3" href="{{ path('app_formation_index') }}">Revenir à la liste</a>
+{{ form_end(form) }}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="M00Bb3V" resname="Hello!">
+        <source>Hello!</source>
+        <target>Bonjour !</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="YsVAIxB" resname="Our produits">
+        <source>Our produits</source>
+        <target>Nos produits</target>
+      </trans-unit>
+      <trans-unit id=".9NEkx0" resname="Upcoming produits">
+        <source>Upcoming produits</source>
+        <target>Formations à venir</target>
+      </trans-unit>
+      <trans-unit id="N6vpEL6" resname="Suggest a produit">
+        <source>Suggest a produit</source>
+        <target>Proposer une produit</target>
+      </trans-unit>
+      <trans-unit id="Yx2g6Fh" resname="Give your opinion">
+        <source>Give your opinion</source>
+        <target>Donner votre avis</target>
+      </trans-unit>
+      <trans-unit id="Np40DHt" resname="Our center">
+        <source>Our center</source>
+        <target>Informations</target>
+      </trans-unit>
+      <trans-unit id="Fs2luqI" resname="Pages list">
+        <source>Pages list</source>
+        <target>Liste des pages</target>
+      </trans-unit>
+      <trans-unit id="SPDT05f" resname="Sign out">
+        <source>Sign out</source>
+        <target>Se déconnecter</target>
+      </trans-unit>
+      <trans-unit id="XiuOllA" resname="Sign up">
+        <source>Sign up</source>
+        <target>S'inscrire</target>
+      </trans-unit>
+      <trans-unit id="v9QCsvb" resname="Sign in">
+        <source>Sign in</source>
+        <target>Se Connecter</target>
+      </trans-unit>
+      <trans-unit id="gh4k6A." resname="Created by the SIO team">
+        <source>Created by the SIO team</source>
+        <target>SIO</target>
+      </trans-unit>
+      <trans-unit id="uLHYlMa" resname="Categories">
+        <source>Categories</source>
+        <target>Catégories</target>
+      </trans-unit>
+      <trans-unit id="1VXNNVq" resname="Categories list">
+        <source>Categories list</source>
+        <target>Liste des catégories</target>
+      </trans-unit>
+      <trans-unit id="GrHhIcD" resname="New category">
+        <source>New category</source>
+        <target>Nouvelle catégorie</target>
+      </trans-unit>
+      <trans-unit id="Vpskgqa" resname="Password:">
+        <source>Password:</source>
+        <target>Mot de passe:</target>
+      </trans-unit>
+      <trans-unit id="QoghNQ6" resname="login">
+        <source>login</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="OHfRSIm" resname="Catalog">
+        <source>Catalog</source>
+        <target>Catalogue</target>
+      </trans-unit>
+      <trans-unit id="rbzzT7V" resname="Formations list">
+        <source>Formations list</source>
+        <target>Liste des produits</target>
+      </trans-unit>
+      <trans-unit id="p6S9IvC" resname="New produit">
+        <source>New produit</source>
+        <target>Nouveaux produits</target>
+      </trans-unit>
+      <trans-unit id="hCrEGET" resname="Formation catalog">
+        <source>Formation catalog</source>
+        <target>Catalogue</target>
+      </trans-unit>
+      <trans-unit id="YYO_CIP" resname="Download PDF">
+        <source>Download PDF</source>
+        <target>Télécharger le PDF</target>
+      </trans-unit>
+      <trans-unit id="HGMzUJ3" resname="show">
+        <source>show</source>
+        <target>Afficher</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>Modifier</target>
+      </trans-unit>
+      <trans-unit id="nz33U6Q" resname="Create new">
+        <source>Create new</source>
+        <target>Créer</target>
+      </trans-unit>
+      <trans-unit id="1jvfDvj" resname="An error has occured: ">
+        <source>An error has occured: </source>
+        <target>Une erreur est survenue : </target>
+      </trans-unit>
+      <trans-unit id="xlmg0O3" resname="Illustration">
+        <source>Illustration</source>
+        <target>Illustration</target>
+      </trans-unit>
+      <trans-unit id="az2SQK9" resname="Please upload a valid image file">
+        <source>Please upload a valid image file</source>
+        <target>Choisissez une image valide</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

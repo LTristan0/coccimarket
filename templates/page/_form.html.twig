@@ -1,0 +1,35 @@
+{{ form_start(form) }}
+    <div class="form-group">
+        {{ form_label(form.title) }}
+        {{ form_widget(form.title, {'attr': {'class': 'form-control'}}) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.image) }}
+        {{ form_widget(form.image, {'attr': {'class': 'form-control-file'}}) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.text) }}
+        {{ form_widget(form.text, {'attr': {'class': 'ckeditor'}}) }}
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">{{ button_label|default('Créer') }}</button>
+        <a class="btn btn-secondary" href="{{ path('app_page_index') }}">Revenir à la liste</a>
+    </div>
+{{ form_end(form) }}
+
+{% block javascripts %}
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            ClassicEditor
+                .create(document.querySelector('.ckeditor'), {
+                    alignment: {
+                        options: ['left', 'center'] // Permettre l'alignement à gauche et au centre
+                    }
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        });
+    </script>
+{% endblock %}

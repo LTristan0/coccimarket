@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formations{% endblock %}
+
+{% block body %}
+    <h1>Liste des produits</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                {#<th>Content</th>#}
+                {#<th>Capacité</th>#}
+                {#<th>Tarif</th>#}
+                {#<th>Date de création</th>#}
+                {#<th>Description</th>#}
+                {#<th>Date de début</th>#}
+                {#<th>Date de fin</th>#}
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for produit in produits %}
+            <tr>
+                <td>{{ produit.id }}</td>
+                <td>{{ produit.name }}</td>
+                {#<td>{{ produit.content }}</td>#}
+                {#<td>{{ produit.capacity }}</td>#}
+                {#<td>{{ produit.price }}</td>#}
+                {#<td>{{ produit.createdAt ? produit.createdAt|date('Y-m-d H:i:s') : '' }}</td>#}
+                {#<td>{{ produit.description }}</td>#}
+                {#<td>{{ produit.startDateTime ? produit.startDateTime|date('Y-m-d H:i:s') : '' }}</td>#}
+                {#<td>{{ produit.endDateTime ? produit.endDateTime|date('Y-m-d H:i:s') : '' }}</td>#}
+                <td>
+                    <a class="btn btn-secondary btn-sm" href="{{ path('app_formation_show', {'id': produit.id}) }}"><i class="fa-solid fa-eye"></i></a>
+                    <a class="btn btn-warning btn-sm" href="{{ path('app_formation_edit', {'id': produit.id}) }}"><i class="fa-solid fa-pen"></i></a>
+                    <a class="btn btn-secondary btn-sm" href="{{ path('app_formation_duplicate', {'id': produit.id}) }}"><i class="fa-solid fa-copy"></i></a>
+                    {{ include('produit/_delete_form.html.twig') }}
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">Il n'y a aucune produit !</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="{{ path('app_formation_new') }}"><i class="fa-solid fa-plus"></i> Nouvelle produit</a>
+{% endblock %}
